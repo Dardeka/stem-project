@@ -33,7 +33,7 @@ function Homepage() {
                             <p className="w-[750px] max-w-[850px] text-justify">Sustainable Development Goals (SDGs) merupakan agenda global yang digagas oleh PBB pada tahun 2015 dan diikuti oleh 193 negara. SDG merupakan program lanjutan dari Millenium Development Goals (MDG) yang telah dilaksanakan pada tahun 2000 hingga tahun 2015. Agenda ini memiliki 17 tujuan utama yang ditargetkan akan dicapai pada tahun 2030. Seluruh tujuan utama tersebut mencakup berbagai bidang, seperti bidang sosial, ekonomi, dan lingkungan. Ini merupakan komitmen dunia dalam mengatasi berbagai permasalahan yang terdapat dalam berbagai bidang, seperti mengentaskan kemiskinan dan meningkatkan kesejahteraan semua orang.</p>
                         </div>
                     </div>
-                    <div className="flex flex-col mt-10 items-center justify-center">
+                    <div className="flex flex-col mt-20 items-center justify-center">
                         <h2 className="text-2xl font-semibold underline">17 Tujuan SDGs</h2>
                         <div className="grid grid-cols-6 gap-4 mt-6">
                             {/* poin 1 */}
