@@ -1,10 +1,10 @@
 function Homepage() {
     return(
         <>
-            <header className="sticky top-0 flex flex-row bg-[#003366] text-white py-4 items-center shadow-xl/50 z-10">
+            <header className="sticky top-0 w-full flex flex-row bg-[#003366] text-white py-4 items-center shadow-xl/50 z-40">
                 <div className="flex flex-row items-center space-x-4 ml-16">
-                    <img src="/images/logo.png" alt="" className="w-20 h-20"/>
-                    <h1 className="text-xl font-bold ">
+                    <img src="/images/logo.png" alt="" className="w-15 h-15"/>
+                    <h1 className="text-lg font-bold ">
                         Pendidikan<br />Berkualitas
                     </h1>
                 </div>
@@ -17,11 +17,217 @@ function Homepage() {
                 </div>
             </header>
             <main>
-                <section className="flex flex-col items-center justify-center h-[500px] bg-[url('/images/hero.jpg')] bg-[length:100%_100%] bg-cover bg-center bg-no-repeat">
-                    <div className="w-screen h-screen bg-black/50 text-white p-8 flex flex-col justify-center items-center">
+                <section className="flex flex-col items-center justify-center w-full h-[550px] bg-[url('/images/hero.jpg')] bg-[length:100%_100%] bg-cover bg-center bg-no-repeat">
+                    <div className="w-full h-full bg-black/50 text-white p-8 flex flex-col justify-center items-center">
                         <h2 className="text-6xl font-bold mb-4 text-center">Transformasi Pendidikan Indonesia Melalui Data dan Aksi Nyata.</h2>
                         <p className="text-lg mb-8">Memantau perkembangan SDG 4 secara transparan untuk memastikan standar kualitas pendidikan yang berkelanjutan.</p>
                         <button className="w-[200px] bg-blue-500 px-6 py-3 rounded-lg cursor-pointer hover:bg-blue-600 transition duration-300">Lihat Selengkapnya</button>
+                    </div>
+                </section>
+                {/* Section Pengantar Singkat */}
+                <section className="mt-25 px-30 mb-15 items-center justify-center">
+                    <div className="flex flex-row">
+                        <img src="/images/SDGs.png" alt="" className="w-65 h-auto"/>
+                        <div className="flex flex-col justify-center ml-10 space-y-6">
+                            <h1 className="text-4xl font-semibold">Apa itu SDGs?</h1>
+                            <p className="w-[750px] max-w-[850px] text-justify">Sustainable Development Goals (SDGs) merupakan agenda global yang digagas oleh PBB pada tahun 2015 dan diikuti oleh 193 negara. SDG merupakan program lanjutan dari Millenium Development Goals (MDG) yang telah dilaksanakan pada tahun 2000 hingga tahun 2015. Agenda ini memiliki 17 tujuan utama yang ditargetkan akan dicapai pada tahun 2030. Seluruh tujuan utama tersebut mencakup berbagai bidang, seperti bidang sosial, ekonomi, dan lingkungan. Ini merupakan komitmen dunia dalam mengatasi berbagai permasalahan yang terdapat dalam berbagai bidang, seperti mengentaskan kemiskinan dan meningkatkan kesejahteraan semua orang.</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col mt-10 items-center justify-center">
+                        <h2 className="text-2xl font-semibold underline">17 Tujuan SDGs</h2>
+                        <div className="grid grid-cols-6 gap-4 mt-6">
+                            {/* poin 1 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/01.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[200px] h-full scale-110 bg-[#E5243B] py-4 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[65%] transition-all duration-500 ease-in-out z-0 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Tanpa Kemiskinan <br/>
+                                        <span className="text-xs font-normal">Mengakhiri kemiskinan dalam segala bentuk dan di mana pun di seluruh dunia.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* poin 2 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/02.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[200px] h-full scale-110 bg-[#DDA63A] py-4 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[65%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Tanpa Kelaparan <br/>
+                                        <span className="text-xs font-normal">Mengakhiri kelaparan, mencapai ketahanan pangan, dan meningkatkan nutrisi.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            {/* poin 3 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/03.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[225px] h-full scale-110 bg-[#4C9F38] py-2 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[60%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Kehidupan Sehat & Sejahtera <br/>
+                                        <span className="text-xs font-normal">Menjamin kehidupan yang sehat dan meningkatkan kesejahteraan bagi semua usia.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            {/* poin 4 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/04.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[250px] h-full scale-110 bg-[#C5192D] py-4 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[55%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Pendidikan Berkualitas <br/>
+                                        <span className="text-xs font-normal">Menjamin pendidikan inklusif, merata, dan meningkatkan kesempatan belajar sepanjang hayat</span>
+                                    </p>
+                                </div>
+                            </div>
+                            {/* poin 5 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/05.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[200px] h-full scale-110 bg-[#FF3A21] py-2 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[65%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Kesetaraan Gender <br/>
+                                        <span className="text-xs font-normal">Mencapai kesetaraan gender serta memberdayakan kaum perempuan dan anak perempuan.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            {/* poin 6 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/06.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 right-3 w-[200px] h-full scale-110 bg-[#26BDE2] py-4 px-5 opacity-0 group-hover:opacity-100 group-hover:-translate-x-[60%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Air Bersih & Sanitasi <br/>
+                                        <span className="text-xs font-normal">Menjamin ketersediaan dan pengelolaan air bersih serta sanitasi yang berkelanjutan.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            {/* poin 7 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/07.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[225px] h-full scale-110 bg-[#FCC30B] py-4 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[60%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Energi Bersih & Terjangkau <br/>
+                                        <span className="text-xs font-normal">Menjamin akses energi yang terjangkau, andal, berkelanjutan, dan modern.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* poin 8 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/08.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[250px] h-full scale-110 bg-[#A21942] py-4 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[55%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Pekerjaan Layak & Ekonomi<br/>
+                                        <span className="text-xs font-normal">Mendorong pertumbuhan ekonomi inklusif dan pekerjaan layak bagi semua orang.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            {/* poin 9 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/09.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[250px] h-full scale-110 bg-[#FD6925] py-4 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[55%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Industri, Inovasi & Infrastruktur<br/>
+                                        <span className="text-xs font-normal">Membangun infrastruktur tangguh, mendukung industri inklusif, dan mendorong inovasi.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            {/* poin 10 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/10.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[250px] h-full scale-110 bg-[#DD1367] py-4 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[55%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Berkurangnya Kesenjangan <br/>
+                                        <span className="text-xs font-normal">Mengurangi kesenjangan pendapatan dan peluang di dalam dan antar negara.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            {/* poin 11 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/11.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[250px] h-full scale-110 bg-[#FD9D24] py-2 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[55%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Kota & Pemukiman Berkelanjutan <br/>
+                                        <span className="text-xs font-normal">Menjadikan kota dan pemukiman manusia inklusif, aman, tangguh, dan berkelanjutan.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            {/* poin 12 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/12.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 right-3 w-[200px] h-full scale-110 bg-[#BF8B2E] py-2 px-4 opacity-0 group-hover:opacity-100 group-hover:-translate-x-[60%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Konsumsi & Produksi Bertanggung Jawab <br/>
+                                        <span className="text-xs font-normal">Menjamin pola konsumsi dan produksi yang berkelanjutan serta efisien.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* poin 13 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/13.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[200px] h-full scale-110 bg-[#3F7E44] py-3 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[65%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Penanganan Perubahan Iklim <br/>
+                                        <span className="text-xs font-normal">Mengambil tindakan cepat untuk mengatasi perubahan iklim dan dampaknya.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* poin 14 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/14.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[200px] h-full scale-110 bg-[#0A97D9] py-3 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[65%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Ekosistem Laut <br/>
+                                        <span className="text-xs font-normal">Melestarikan dan menjaga keberlanjutan sumber daya laut untuk pembangunan.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            {/* poin 15 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/15.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[225px] h-full scale-110 bg-[#56C02B] py-3 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[55%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Ekosistem Daratan <br/>
+                                        <span className="text-xs font-normal">Melindungi hutan, menghentikan degradasi lahan, dan mencegah hilangnya keanekaragaman hayati.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            {/* poin 16 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/16.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[225px] h-full scale-110 bg-[#00689D] py-2 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[60%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Perdamaian, Keadilan & Kelembagaan <br/>
+                                        <span className="text-xs font-normal">Mendukung masyarakat damai, akses keadilan, dan membangun lembaga yang akuntabel.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            {/* poin 17 */}
+                            <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
+                                <img src="/images/sdgs/17.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
+
+                                <div className="absolute top-0 left-0 w-[250px] h-full scale-110 bg-[#19486A] py-2 px-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-[55%] transition-all duration-500 ease-in-out z-10 group-hover:z-30 pointer-events-none">
+                                    <p className="text-white font-bold text-sm">
+                                        Kemitraan untuk Mencapai Tujuan <br/>
+                                        <span className="text-xs font-normal">Memperkuat kemitraan global dan sarana implementasi untuk mencapai tujuan bersama.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
