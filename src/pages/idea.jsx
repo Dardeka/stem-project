@@ -1,6 +1,10 @@
+import Header from "../components/header";
+
 function Idea() {
     return(
-        <></>
+        <>
+            <Header/>
+        </>
     )
 }
 

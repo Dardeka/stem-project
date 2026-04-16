@@ -1,6 +1,10 @@
+import Header from "../components/header";
+
 function Reflection() {
     return(
-        <></>
+        <>
+            <Header/>
+        </>
     )
 }
 
