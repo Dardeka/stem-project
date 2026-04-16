@@ -11,7 +11,7 @@ function Homepage() {
                     <div className="w-full h-full bg-black/50 text-white p-8 flex flex-col justify-center items-center">
                         <h2 className="text-6xl font-bold mb-4 text-center">Transformasi Pendidikan Indonesia Melalui Data dan Aksi Nyata.</h2>
                         <p className="text-lg mb-8">Memantau perkembangan SDG 4 secara transparan untuk memastikan standar kualitas pendidikan yang berkelanjutan.</p>
-                        <Link to="tentang-sdgs" smooth={true} duration={500}>
+                        <Link to="tentang-sdgs" smooth={true} duration={1000}>
                             <button className="w-[200px] bg-blue-500 px-6 py-3 rounded-lg cursor-pointer hover:bg-blue-600 transition duration-300">Lihat Selengkapnya</button>
                         </Link>
                     </div>
