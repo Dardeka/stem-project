@@ -16,7 +16,7 @@ function EmpathyResearch() {
             <Header/>
             <main>
                 {/* Hero */}
-                <section className="flex flex-col items-center justify-center w-full h-[540px] bg-[url('/images/empathy.jpeg')] bg-[length:100%_100%] bg-cover bg-center bg-no-repeat">
+                <section className="flex flex-col items-center justify-center mt-10 w-full h-[540px] bg-[url('/images/empathy.jpeg')] bg-[length:100%_100%] bg-cover bg-center bg-no-repeat">
                     <div className="w-full h-full bg-black/50 text-white p-8 flex flex-col justify-center items-center">
                         <h2 className="text-6xl font-bold mb-4 text-center">Penelitian dengan Empati</h2>
                         <p className="text-lg mb-8">Menggunakan pendekatan empati untuk memahami kebutuhan dan pengalaman pengguna dalam proses penelitian.</p>
