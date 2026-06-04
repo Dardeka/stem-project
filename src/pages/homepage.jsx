@@ -4,20 +4,20 @@ import { Link, Element, animateScroll as scroll } from "react-scroll";
 
 function Homepage() {
     return(
-        <div className="w-screen h-screen overflow-x-hidden">
+        <div>
             <Header/>
             <main>
                 <section className="flex flex-col items-center justify-center w-full h-[550px] bg-[url('/images/hero.jpg')] bg-[length:100%_100%] bg-cover bg-center bg-no-repeat">
                     <div className="w-full h-full bg-black/50 text-white p-8 flex flex-col justify-center items-center">
                         <h2 className="text-4xl lg:text-6xl font-bold mb-4 text-center">Transformasi Pendidikan Indonesia Melalui Data dan Aksi Nyata.</h2>
                         <p className="text-md lg:text-lg text-center mb-8">Memantau perkembangan SDG 4 secara transparan untuk memastikan standar kualitas pendidikan yang berkelanjutan.</p>
-                        <Link to="tentang-sdgs" smooth={true} duration={1000}>
+                        <Link to="tentang" smooth={true} duration={1000}>
                             <button className="w-[150px] lg:w-[200px] bg-blue-500 text-bold px-3 lg:px-6 py-2 lg:py-3 rounded-lg cursor-pointer hover:bg-blue-600 transition duration-300">Lihat Selengkapnya</button>
                         </Link>
                     </div>
                 </section>
                 {/* Section Pengantar Singkat */}
-                <section id="tentang-sdgs" className="pt-35 mx-10 lg:mx-30 mb-15 items-center justify-center">
+                <section id="tentang" className="pt-35 mx-10 lg:mx-30 mb-15 items-center justify-center">
                     <div className="flex flex-row items-center">
                         <img src="/images/SDGs.png" alt="" className="hidden md:block w-auto h-auto max-w-65 max-h-65"/>
                         <div className="flex flex-col justify-center ml-10 space-y-6">
