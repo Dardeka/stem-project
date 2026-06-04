@@ -27,6 +27,7 @@ function Homepage() {
                     </div>
                     <div className="flex flex-col mt-20 items-center justify-center">
                         <h2 className="text-2xl font-semibold underline">17 Tujuan SDGs</h2>
+                        {/* Poin-poin sdgs */}
                         <div className="grid grid-cols-3 lg:grid-cols-6 gap-4 mt-6">
                             {/* poin 1 */}
                             <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
@@ -223,56 +224,56 @@ function Homepage() {
                     </div>
                 </section>
                 {/* Section Target */}
-                <section className="mx-30 mt-25 mb-25 space-y-6">
+                <section className="mx-10 lg:mx-30 mt-25 mb-25 space-y-6">
                     <div className="flex flex-row space-x-15">
-                        <img src="/images/target.jpeg" alt="" className="w-100" />
+                        <img src="/images/target.jpeg" alt="" className="w-70 lg:w-100 h-full" />
                         <div className="flex flex-col space-y-10">
-                            <h2 className="text-4xl font-semibold">Apa target yang perlu dicapai?</h2>
-                            <p className="text-2xl">Mewujudkan pendidikan dasar hingga menengah yang inklusif dan berkualitas</p>
+                            <h2 className="text-xl lg:text-4xl font-semibold">Apa target yang perlu dicapai?</h2>
+                            <p className="text-base lg:text-2xl">Mewujudkan pendidikan dasar hingga menengah yang inklusif dan berkualitas</p>
                         </div>
                     </div>
                     {/* Fakta-fakta */}
                     <div className="flex flex-col mt-15 gap-10">
-                        <h2 className="text-2xl font-semibold">Apa saja fakta-fakta terkait target tersebut? </h2>
-                        <div className="flex flex-col gap-5">
+                        <h2 className="text-xl lg:text-2xl font-semibold">Apa saja fakta-fakta terkait target tersebut? </h2>
+                        <div className="flex flex-col gap-2 lg:gap-5">
                             {/* Fakta 1 */}
-                            <div className="px-10 flex flex-row items-center justify-center gap-10 bg-gradient-to-b from-[#D62B40] to-[#941323] text-white p-4 rounded-lg mb-4 mr-auto shadow-xl/50">
-                                <h1 className="text-5xl font-extrabold" >01</h1>
+                            <div className="lg:w-auto px-10 flex flex-row items-center justify-center gap-10 bg-gradient-to-b from-[#D62B40] to-[#941323] text-white p-4 rounded-lg mb-4 mr-auto shadow-xl/50">
+                                <h1 className="text-2xl lg:text-5xl font-extrabold" >01</h1>
                                 <div className="flex flex-col">
-                                    <p className="w-[500px] text-sm text-justify">Jika dibanding dengan negara maju yang lain, kualitas pembelajaran di Indonesia terkategori masih rendah, sebab belum mencapai mutu yang optimal, serta tujuan pendidikan sebelumnya pula belum tercapai.</p>
-                                    <b className="ml-auto opacity-75">(Kadi et al., 2017)</b>
+                                    <p className="w-[400px] lg:max-w-[500px] text-sm text-justify">Jika dibanding dengan negara maju yang lain, kualitas pembelajaran di Indonesia terkategori masih rendah, sebab belum mencapai mutu yang optimal, serta tujuan pendidikan sebelumnya pula belum tercapai.</p>
+                                    <b className="text-md lg:text-base ml-auto opacity-75">(Kadi et al., 2017)</b>
                                 </div>
                             </div>
                             {/* Fakta 2 */}
-                            <div className="px-10 flex flex-row items-center justify-center gap-10 bg-gradient-to-b from-[#D62B40] to-[#941323] text-white p-4 rounded-lg mb-4 ml-auto shadow-xl/50">
-                                <h1 className="text-5xl font-extrabold" >02</h1>
+                            <div className="lg:w-auto px-10 flex flex-row items-center justify-center gap-10 bg-gradient-to-b from-[#D62B40] to-[#941323] text-white p-4 rounded-lg mb-4 ml-auto shadow-xl/50">
+                                <h1 className="text-2xl lg:text-5xl font-extrabold" >02</h1>
                                 <div className="flex flex-col gap-4">
-                                    <p className="w-[600px] text-sm text-justify">Dalam mewujudkan pendidikan yang bermutu, Kementerian Pendidikan Dasar dan Menengah menetapkan 4 indikator dari pendidikan bermutu, yakni sarana dan prasarana yang memadai, pendidik dan tenaga kependidikan yang kompeten dan sejahtera, lingkungan sosial-budaya yang mendukung, dan pembelajaran yang adaptif serta bermakna.</p>
-                                    <b className="ml-auto opacity-75">(Yunandra, 2024)</b> 
+                                    <p className="w-[400px] lg:max-w-[600px] text-sm text-justify">Dalam mewujudkan pendidikan yang bermutu, Kementerian Pendidikan Dasar dan Menengah menetapkan 4 indikator dari pendidikan bermutu, yakni sarana dan prasarana yang memadai, pendidik dan tenaga kependidikan yang kompeten dan sejahtera, lingkungan sosial-budaya yang mendukung, dan pembelajaran yang adaptif serta bermakna.</p>
+                                    <b className="text-md lg:text-base ml-auto opacity-75">(Yunandra, 2024)</b> 
                                 </div>
                             </div>
                             {/* Fakta 3 */}
-                            <div className="px-10 flex flex-row items-center justify-center gap-10 bg-gradient-to-b from-[#D62B40] to-[#941323] text-white p-4 rounded-lg mb-4 mr-auto shadow-xl/50">
-                                <h1 className="text-5xl font-extrabold" >03</h1>
+                            <div className="lg:w-auto px-10 flex flex-row items-center justify-center gap-10 bg-gradient-to-b from-[#D62B40] to-[#941323] text-white p-4 rounded-lg mb-4 mr-auto shadow-xl/50">
+                                <h1 className="text-2xl lg:text-5xl font-extrabold" >03</h1>
                                 <div className="flex flex-col gap-4">
-                                    <p className="w-[600px] text-sm text-justify">PBB mendukung pendidikan bermutu di Indonesia yang tercermin melalui program kolaborasi dengan UNESCO, UNICEF dan UNDP dimana UNESCO mendukung kebijakan pendidikan Indonesia, seperti kurikulum, pelatihan guru dan kepala sekolah, dan literasi. UNICEF berperan besar dalam membantu pemerintah dalam menyusun kebijakan yang inklusif, dan UNDP berperan dalam penguatan sistem pendidikan berbasis data dan inklusivitas serta bekerja sama dalam menyediakan akses pada pendidikan digital dan pelatihan vokasi untuk para remaja.</p>
-                                    <b className="ml-auto opacity-75">(Nurahman, 2025)</b>
+                                    <p className="w-[400px] lg:max-w-[600px] text-sm text-justify">PBB mendukung pendidikan bermutu di Indonesia yang tercermin melalui program kolaborasi dengan UNESCO, UNICEF dan UNDP dimana UNESCO mendukung kebijakan pendidikan Indonesia, seperti kurikulum, pelatihan guru dan kepala sekolah, dan literasi. UNICEF berperan besar dalam membantu pemerintah dalam menyusun kebijakan yang inklusif, dan UNDP berperan dalam penguatan sistem pendidikan berbasis data dan inklusivitas serta bekerja sama dalam menyediakan akses pada pendidikan digital dan pelatihan vokasi untuk para remaja.</p>
+                                    <b className="text-md lg:text-base ml-auto opacity-75">(Nurahman, 2025)</b>
                                 </div>
                             </div>
                             {/* Fakta 4 */}
-                            <div className="px-10 flex flex-row items-center justify-center gap-10 bg-gradient-to-b from-[#D62B40] to-[#941323] text-white p-4 rounded-lg mb-4 ml-auto shadow-xl/50">
-                                <h1 className="text-5xl font-extrabold" >04</h1>
+                            <div className="lg:w-auto px-10 flex flex-row items-center justify-center gap-10 bg-gradient-to-b from-[#D62B40] to-[#941323] text-white p-4 rounded-lg mb-4 ml-auto shadow-xl/50">
+                                <h1 className="text-2xl lg:text-5xl font-extrabold" >04</h1>
                                 <div className="flex flex-col gap-4">
-                                    <p className="w-[600px] text-sm text-justify">Pemerintah Provinsi (Pemprov) DKI Jakarta terus menunjukkan komitmennya dalam meningkatkan akses pendidikan bagi masyarakat kurang mampu melalui program Kartu Jakarta Pintar (KJP) Plus. Pada tahap pertama tahun 2025, jumlah penerima manfaat meningkat signifikan menjadi 707.622 siswa, dibandingkan tahap kedua tahun 2024 yang berjumlah 523.622 siswa. Seiring dengan peningkatan jumlah penerima, anggaran KJP Plus juga mengalami kenaikan dari Rp2,5 triliun pada tahun 2024 menjadi Rp3,2 triliun pada tahun 2025.</p>
-                                    <b className="ml-auto opacity-75">(Tobing et al., 2025)</b>
+                                    <p className="w-[400px] lg:max-w-[600px] text-sm text-justify">Pemerintah Provinsi (Pemprov) DKI Jakarta terus menunjukkan komitmennya dalam meningkatkan akses pendidikan bagi masyarakat kurang mampu melalui program Kartu Jakarta Pintar (KJP) Plus. Pada tahap pertama tahun 2025, jumlah penerima manfaat meningkat signifikan menjadi 707.622 siswa, dibandingkan tahap kedua tahun 2024 yang berjumlah 523.622 siswa. Seiring dengan peningkatan jumlah penerima, anggaran KJP Plus juga mengalami kenaikan dari Rp2,5 triliun pada tahun 2024 menjadi Rp3,2 triliun pada tahun 2025.</p>
+                                    <b className="text-md lg:text-base ml-auto opacity-75">(Tobing et al., 2025)</b>
                                 </div>
                             </div>
                             {/* Fakta 5 */}
-                            <div className="px-10 flex flex-row items-center justify-center gap-10 bg-gradient-to-b from-[#D62B40] to-[#941323] text-white p-4 rounded-lg mb-4 mr-auto shadow-xl/50">
-                                <h1 className="text-5xl font-extrabold" >05</h1>
+                            <div className="lg:w-auto px-10 flex flex-row items-center justify-center gap-10 bg-gradient-to-b from-[#D62B40] to-[#941323] text-white p-4 rounded-lg mb-4 mr-auto shadow-xl/50">
+                                <h1 className="text-2xl lg:text-5xl font-extrabold" >05</h1>
                                 <div className="flex flex-col gap-4">
-                                    <p className="w-[600px] text-sm text-justify">Kementerian Pendidikan Dasar dan Menengah (Kemendikdasmen) mencatat pencapaian signifikan dalam implementasi program prioritas Pendidikan Bermutu untuk Semua sepanjang periode Oktober 2024 hingga September 2025. Dengan alokasi anggaran sebesar Rp 181,72 triliun untuk enam program prioritas, pemerintah membuktikan komitmennya dalam memastikan layanan pendidikan yang lebih merata, inklusif, dan bermutu bagi seluruh anak Indonesia.</p>
-                                    <b className="ml-auto opacity-75">(Westiana, 2025)</b>
+                                    <p className="w-[400px] lg:max-w-[600px] text-sm text-justify">Kementerian Pendidikan Dasar dan Menengah (Kemendikdasmen) mencatat pencapaian signifikan dalam implementasi program prioritas Pendidikan Bermutu untuk Semua sepanjang periode Oktober 2024 hingga September 2025. Dengan alokasi anggaran sebesar Rp 181,72 triliun untuk enam program prioritas, pemerintah membuktikan komitmennya dalam memastikan layanan pendidikan yang lebih merata, inklusif, dan bermutu bagi seluruh anak Indonesia.</p>
+                                    <b className="text-md lg:text-base ml-auto opacity-75">(Westiana, 2025)</b>
                                 </div>
                             </div>
                         </div>
