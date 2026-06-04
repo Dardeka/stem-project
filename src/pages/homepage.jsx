@@ -9,25 +9,25 @@ function Homepage() {
             <main>
                 <section className="flex flex-col items-center justify-center w-full h-[550px] bg-[url('/images/hero.jpg')] bg-[length:100%_100%] bg-cover bg-center bg-no-repeat">
                     <div className="w-full h-full bg-black/50 text-white p-8 flex flex-col justify-center items-center">
-                        <h2 className="text-6xl font-bold mb-4 text-center">Transformasi Pendidikan Indonesia Melalui Data dan Aksi Nyata.</h2>
-                        <p className="text-lg mb-8">Memantau perkembangan SDG 4 secara transparan untuk memastikan standar kualitas pendidikan yang berkelanjutan.</p>
+                        <h2 className="text-4xl lg:text-6xl font-bold mb-4 text-center">Transformasi Pendidikan Indonesia Melalui Data dan Aksi Nyata.</h2>
+                        <p className="text-md lg:text-lg text-center mb-8">Memantau perkembangan SDG 4 secara transparan untuk memastikan standar kualitas pendidikan yang berkelanjutan.</p>
                         <Link to="tentang-sdgs" smooth={true} duration={1000}>
-                            <button className="w-[200px] bg-blue-500 px-6 py-3 rounded-lg cursor-pointer hover:bg-blue-600 transition duration-300">Lihat Selengkapnya</button>
+                            <button className="w-[150px] lg:w-[200px] bg-blue-500 text-bold px-3 lg:px-6 py-2 lg:py-3 rounded-lg cursor-pointer hover:bg-blue-600 transition duration-300">Lihat Selengkapnya</button>
                         </Link>
                     </div>
                 </section>
                 {/* Section Pengantar Singkat */}
-                <section id="tentang-sdgs" className="pt-35 mx-30 mb-15 items-center justify-center">
-                    <div className="flex flex-row">
-                        <img src="/images/SDGs.png" alt="" className="w-65 h-auto"/>
+                <section id="tentang-sdgs" className="pt-35 mx-10 lg:mx-30 mb-15 items-center justify-center">
+                    <div className="flex flex-row items-center">
+                        <img src="/images/SDGs.png" alt="" className="w-auto h-auto max-w-65 max-h-65"/>
                         <div className="flex flex-col justify-center ml-10 space-y-6">
                             <h1 className="text-4xl font-semibold">Apa itu SDGs?</h1>
-                            <p className="w-[750px] max-w-[850px] text-justify">Sustainable Development Goals (SDGs) merupakan agenda global yang digagas oleh PBB pada tahun 2015 dan diikuti oleh 193 negara. SDG merupakan program lanjutan dari Millenium Development Goals (MDG) yang telah dilaksanakan pada tahun 2000 hingga tahun 2015. Agenda ini memiliki 17 tujuan utama yang ditargetkan akan dicapai pada tahun 2030. Seluruh tujuan utama tersebut mencakup berbagai bidang, seperti bidang sosial, ekonomi, dan lingkungan. Ini merupakan komitmen dunia dalam mengatasi berbagai permasalahan yang terdapat dalam berbagai bidang, seperti mengentaskan kemiskinan dan meningkatkan kesejahteraan semua orang.</p>
+                            <p className="w-auto max-w-[850px] text-sm lg:text-lg text-justify">Sustainable Development Goals (SDGs) merupakan agenda global yang digagas oleh PBB pada tahun 2015 dan diikuti oleh 193 negara. SDG merupakan program lanjutan dari Millenium Development Goals (MDG) yang telah dilaksanakan pada tahun 2000 hingga tahun 2015. Agenda ini memiliki 17 tujuan utama yang ditargetkan akan dicapai pada tahun 2030. Seluruh tujuan utama tersebut mencakup berbagai bidang, seperti bidang sosial, ekonomi, dan lingkungan. Ini merupakan komitmen dunia dalam mengatasi berbagai permasalahan yang terdapat dalam berbagai bidang, seperti mengentaskan kemiskinan dan meningkatkan kesejahteraan semua orang.</p>
                         </div>
                     </div>
                     <div className="flex flex-col mt-20 items-center justify-center">
                         <h2 className="text-2xl font-semibold underline">17 Tujuan SDGs</h2>
-                        <div className="grid grid-cols-6 gap-4 mt-6">
+                        <div className="grid grid-cols-3 lg:grid-cols-6 gap-4 mt-6">
                             {/* poin 1 */}
                             <div className="relative group flex flex-row w-30 h-30 cursor-pointer">
                                 <img src="/images/sdgs/01.png" className="relative z-20 cursor-pointer hover:scale-110 transition duration-700 ease-in-out"/>
