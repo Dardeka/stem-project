@@ -16,9 +16,9 @@ function Testing() {
                 <section className="flex flex-col gap-y-10 mt-10 mx-20 py-30">
                     <h1 className="text-2xl font-bold mb-4">Preview Platform EduBridge</h1>
                     <span>Berikut ini adalah tampilan awal dari platform EduBridge:</span>
-                    <img className="border border-black shadow-lg/30" src="/public/images/ss-landingPage.png" alt="" />
+                    <img className="border border-black shadow-lg/30" src="/images/ss-landingPage.webp" alt="" />
                     <span>Berikut ini adalah tampilan dashboard akun setelah pengguna login:</span>
-                    <img className="border border-black shadow-lg/30" src="/public/images/ss-DashboardAkun.png" alt="" />
+                    <img className="border border-black shadow-lg/30" src="/images/ss-DashboardAkun.webp" alt="" />
                 </section>
             </main>
             <Footer/>
